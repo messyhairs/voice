@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Camera } from '@ionic-native/camera/ngx';
+import { SpeechRecognition } from '@ionic-native/speech-recognition/ngx';
 import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
@@ -21,8 +22,9 @@ import { IonicStorageModule } from '@ionic/storage';
     StatusBar,
     SplashScreen,
     Camera,
+    SpeechRecognition,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
